@@ -1,0 +1,20 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+}
+.title {
+  font-size: var(--fs-h1);
+  margin-top: var(--space-3);
+}
+.lead {
+  color: var(--c-muted);
+  font-size: var(--fs-lead);
+  margin-top: var(--space-4);
+}
+.aside {
+  flex-shrink: 0;
+}

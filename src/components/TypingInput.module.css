@@ -1,0 +1,53 @@
+.field {
+  width: 100%;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  padding: 1.1rem 1.3rem;
+  border: 1.5px solid var(--c-line);
+  border-radius: var(--radius);
+  background: var(--c-surface);
+  color: var(--c-ink);
+  text-align: center;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+}
+
+.field::placeholder {
+  color: var(--c-muted);
+  opacity: 0.55;
+  font-size: 1rem;
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--c-bronze);
+  box-shadow: 0 0 0 4px rgba(156, 107, 60, 0.12);
+}
+
+.area {
+  text-align: left;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.correct {
+  border-color: var(--c-success);
+  box-shadow: 0 0 0 4px rgba(63, 125, 88, 0.14);
+}
+
+.wrong {
+  border-color: var(--c-error);
+  box-shadow: 0 0 0 4px rgba(162, 59, 59, 0.12);
+  animation: shake 0.4s var(--ease-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrong {
+    animation: none;
+  }
+}
+
+.field:disabled {
+  background: var(--c-light-gray);
+  cursor: default;
+}

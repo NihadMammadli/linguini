@@ -1,0 +1,46 @@
+.footer {
+  background: var(--c-navy-deep);
+  color: rgba(255, 255, 255, 0.7);
+  padding-block: var(--space-8) var(--space-6);
+  border-top: 3px solid var(--c-gold);
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-6);
+}
+.brand {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+.dot {
+  color: var(--c-gold);
+}
+.tag {
+  margin-top: var(--space-2);
+  font-size: var(--fs-small);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  align-items: flex-start;
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+.links a:hover {
+  color: var(--c-gold-soft);
+}
+.legal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+}

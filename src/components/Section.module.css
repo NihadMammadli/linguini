@@ -1,0 +1,40 @@
+.section {
+  padding-block: var(--section-pad);
+}
+
+.surface {
+  background: var(--c-surface);
+}
+.beige {
+  background: var(--c-beige);
+}
+.light {
+  background: var(--c-light-gray);
+}
+.navy {
+  background: var(--c-navy);
+  color: rgba(255, 255, 255, 0.82);
+}
+.navy .title {
+  color: #fff;
+}
+.navy .lead {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.head {
+  max-width: 760px;
+  margin-bottom: var(--space-7);
+}
+
+.title {
+  font-size: var(--fs-h2);
+  margin-top: var(--space-3);
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  color: var(--c-muted);
+  margin-top: var(--space-4);
+  max-width: var(--measure);
+}

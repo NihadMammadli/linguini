@@ -1,0 +1,42 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--c-line);
+  background: var(--c-surface);
+  color: var(--c-navy);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
+}
+.btn:hover {
+  border-color: var(--c-gold);
+  transform: translateY(-1px);
+}
+.on {
+  border-color: var(--c-gold);
+  background: var(--c-beige);
+}
+.big {
+  padding: 1rem 1.8rem;
+  font-size: 1rem;
+}
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--c-navy);
+  color: #fff;
+  font-size: 0.7rem;
+}
+.fallback {
+  font-size: var(--fs-small);
+  color: var(--c-muted);
+  font-style: italic;
+}

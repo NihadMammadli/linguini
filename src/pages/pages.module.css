@@ -1,0 +1,226 @@
+.page {
+  padding-top: calc(var(--header-h) + var(--space-8));
+  padding-bottom: var(--space-10);
+  min-height: 100vh;
+}
+
+.modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-7);
+}
+.chip {
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--c-line);
+  background: var(--c-surface);
+  color: var(--c-text);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease);
+}
+.chip:hover {
+  border-color: var(--c-gold);
+}
+.chipOn {
+  background: var(--c-navy);
+  color: #fff;
+  border-color: var(--c-navy);
+}
+
+/* dashboard */
+.dashGrid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(12, 1fr);
+}
+.col4 {
+  grid-column: span 4;
+}
+.col6 {
+  grid-column: span 6;
+}
+.col8 {
+  grid-column: span 8;
+}
+.col12 {
+  grid-column: span 12;
+}
+@media (max-width: 900px) {
+  .col4,
+  .col6,
+  .col8 {
+    grid-column: span 12;
+  }
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-4);
+}
+.cardTitle h3 {
+  font-size: var(--fs-h3);
+}
+.cardTitle a {
+  font-size: var(--fs-small);
+  color: var(--c-bronze);
+  font-weight: 700;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.tag {
+  font-family: var(--font-georgian);
+  background: var(--c-beige);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.7rem;
+  font-size: 1.1rem;
+}
+.muted {
+  color: var(--c-muted);
+  font-size: var(--fs-small);
+}
+.recentRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--c-line);
+  font-size: 0.95rem;
+}
+.recentRow:last-child {
+  border-bottom: 0;
+}
+
+.continueCard {
+  background: var(--c-navy);
+  color: #fff;
+}
+.continueCard h3,
+.continueCard :global(.eyebrow) {
+  color: #fff;
+}
+.continueCard p {
+  color: rgba(255, 255, 255, 0.72);
+  margin: var(--space-2) 0 var(--space-5);
+}
+
+.sentenceBreakdown {
+  margin-top: var(--space-5);
+  background: var(--c-surface-raised);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+}
+.tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-3) 0 var(--space-4);
+}
+.token {
+  display: grid;
+  gap: 0.15rem;
+  text-align: center;
+  background: var(--c-beige);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.8rem;
+}
+.token b {
+  font-family: var(--font-georgian);
+  font-size: 1.2rem;
+}
+.token span {
+  font-size: 0.72rem;
+  color: var(--c-muted);
+}
+.note {
+  font-size: 0.95rem;
+  color: var(--c-text);
+  border-left: 3px solid var(--c-gold);
+  padding-left: var(--space-4);
+}
+
+/* profile */
+.profileWrap {
+  max-width: 640px;
+  margin-inline: auto;
+  display: grid;
+  gap: var(--space-5);
+}
+.statRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-4);
+}
+.stat {
+  text-align: center;
+}
+.stat strong {
+  display: block;
+  font-size: 2rem;
+  color: var(--c-bronze);
+}
+.stat span {
+  font-size: var(--fs-small);
+  color: var(--c-muted);
+}
+.field {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border: 1.5px solid var(--c-line);
+  border-radius: var(--radius);
+  font-size: 1.05rem;
+}
+.field:focus {
+  outline: none;
+  border-color: var(--c-bronze);
+}
+.danger {
+  color: var(--c-error);
+}
+
+/* modal */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(19, 31, 48, 0.55);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  animation: fadeInUp var(--dur-fast) var(--ease);
+}
+.modal {
+  background: var(--c-surface);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--c-gold);
+  padding: var(--space-8) var(--space-7);
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.modal h2 {
+  font-size: var(--fs-h2);
+  margin: var(--space-3) 0;
+}
+.modal p {
+  color: var(--c-muted);
+  margin-bottom: var(--space-6);
+  margin-inline: auto;
+}
+.modalForm {
+  display: grid;
+  gap: var(--space-4);
+}

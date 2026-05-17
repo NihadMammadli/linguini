@@ -1,0 +1,81 @@
+.wrap {
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  border: 1px solid var(--c-line);
+  animation: fadeInUp var(--dur) var(--ease);
+}
+@media (prefers-reduced-motion: reduce) {
+  .wrap {
+    animation: none;
+  }
+}
+
+.ok {
+  background: var(--c-success-bg);
+  border-color: rgba(63, 125, 88, 0.3);
+}
+.bad {
+  background: var(--c-error-bg);
+  border-color: rgba(162, 59, 59, 0.25);
+}
+
+.verdict {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--c-ink);
+}
+.mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.ok .mark {
+  background: var(--c-success);
+}
+.bad .mark {
+  background: var(--c-error);
+}
+
+.diff {
+  font-family: var(--font-georgian);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  letter-spacing: 0.04em;
+  margin-top: var(--space-4);
+  word-break: break-word;
+}
+.d_ok {
+  color: var(--c-ink);
+}
+.d_wrong {
+  color: var(--c-error);
+}
+.d_missing {
+  color: var(--c-success);
+  border-bottom: 2px solid var(--c-success);
+}
+.d_extra {
+  color: var(--c-error);
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.hint {
+  margin-top: var(--space-4);
+  color: var(--c-text);
+}
+.answer {
+  margin-top: var(--space-3);
+  color: var(--c-muted);
+  font-size: var(--fs-small);
+}
+.answer strong {
+  color: var(--c-ink);
+  font-size: 1.15rem;
+}

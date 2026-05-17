@@ -1,0 +1,96 @@
+/* ============================================================
+   Linguini design tokens — "damla-group" editorial system
+   Calm, academic, premium. Navy + bronze + gold.
+   ============================================================ */
+
+:root {
+  /* ---- Palette ---- */
+  --c-navy: #1b2a41;
+  --c-navy-deep: #131f30;
+  --c-navy-soft: #24364f;
+  --c-bronze: #9c6b3c;
+  --c-bronze-soft: #b78a5c;
+  --c-gold: #c9a24b;
+  --c-gold-soft: #ddc488;
+
+  --c-beige: #f5f1ea;
+  --c-light-gray: #f0f0f2;
+  --c-surface: #ffffff;
+  --c-surface-raised: #fffdfa;
+
+  --c-ink: #1c2230;
+  --c-text: #353b47;
+  --c-muted: #6c7280;
+  --c-line: #e3ddd2;
+
+  --c-success: #3f7d58;
+  --c-success-bg: #eaf3ec;
+  --c-error: #a23b3b;
+  --c-error-bg: #f7ebe9;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Urbanist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-georgian: 'Noto Serif Georgian', 'Urbanist', serif;
+
+  --fs-display: clamp(2.75rem, 6vw, 5rem);
+  --fs-h1: clamp(2.25rem, 4.6vw, 3.75rem);
+  --fs-h2: clamp(1.75rem, 3.2vw, 2.75rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.7rem);
+  --fs-lead: clamp(1.05rem, 1.5vw, 1.3rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.78rem;
+
+  --lh-tight: 1.12;
+  --lh-snug: 1.32;
+  --lh-body: 1.7;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 5rem;
+  --space-10: 6rem;
+  --space-12: 8rem;
+
+  --section-pad: clamp(4rem, 9vw, 8rem);
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --content-max: 1180px;
+  --measure: 64ch;
+
+  /* ---- Radius ---- */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows (soft, layered) ---- */
+  --shadow-sm: 0 1px 2px rgba(27, 42, 65, 0.05),
+    0 2px 6px rgba(27, 42, 65, 0.04);
+  --shadow: 0 4px 10px rgba(27, 42, 65, 0.06),
+    0 12px 30px rgba(27, 42, 65, 0.07);
+  --shadow-lg: 0 10px 24px rgba(27, 42, 65, 0.08),
+    0 28px 60px rgba(27, 42, 65, 0.1);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.28s;
+  --dur: 0.5s;
+  --dur-slow: 0.75s;
+
+  --header-h: 76px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.001s;
+    --dur: 0.001s;
+    --dur-slow: 0.001s;
+  }
+}

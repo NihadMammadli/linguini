@@ -1,0 +1,23 @@
+.card {
+  display: block;
+  background: var(--c-surface-raised);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+  color: inherit;
+}
+
+.interactive:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--c-gold-soft);
+}
+
+.gold {
+  border-top: 3px solid var(--c-gold);
+}

@@ -1,0 +1,75 @@
+import type { Word } from '@/types/models';
+
+/** ~60 thematic words for active-recall production. */
+export const WORDS: Word[] = [
+  // --- people & family ---
+  { id: 'w-mother', ka: 'დედა', en: 'mother', translit: 'deda', category: 'family', group: 'intro' },
+  { id: 'w-father', ka: 'მამა', en: 'father', translit: 'mama', category: 'family', group: 'intro' },
+  { id: 'w-child', ka: 'ბავშვი', en: 'child', translit: 'bavshvi', category: 'family', group: 'core' },
+  { id: 'w-friend', ka: 'მეგობარი', en: 'friend', translit: 'megobari', category: 'family', group: 'core' },
+  { id: 'w-man', ka: 'კაცი', en: 'man', translit: "k'atsi", category: 'family', group: 'intro' },
+  { id: 'w-woman', ka: 'ქალი', en: 'woman', translit: 'kali', category: 'family', group: 'intro' },
+  { id: 'w-sister', ka: 'და', en: 'sister', translit: 'da', category: 'family', group: 'intro' },
+  { id: 'w-brother', ka: 'ძმა', en: 'brother', translit: 'dzma', category: 'family', group: 'core' },
+  // --- nature ---
+  { id: 'w-water', ka: 'წყალი', en: 'water', translit: "ts'q'ali", category: 'nature', group: 'core', hint: 'starts with წ' },
+  { id: 'w-sun', ka: 'მზე', en: 'sun', translit: 'mze', category: 'nature', group: 'intro' },
+  { id: 'w-moon', ka: 'მთვარე', en: 'moon', translit: 'mtvare', category: 'nature', group: 'advanced' },
+  { id: 'w-sky', ka: 'ცა', en: 'sky', translit: 'tsa', category: 'nature', group: 'intro' },
+  { id: 'w-sea', ka: 'ზღვა', en: 'sea', translit: 'zghva', category: 'nature', group: 'advanced' },
+  { id: 'w-mountain', ka: 'მთა', en: 'mountain', translit: 'mta', category: 'nature', group: 'core' },
+  { id: 'w-tree', ka: 'ხე', en: 'tree', translit: 'khe', category: 'nature', group: 'intro' },
+  { id: 'w-forest', ka: 'ტყე', en: 'forest', translit: "t'q'e", category: 'nature', group: 'core' },
+  { id: 'w-rain', ka: 'წვიმა', en: 'rain', translit: "ts'vima", category: 'nature', group: 'core' },
+  { id: 'w-fire', ka: 'ცეცხლი', en: 'fire', translit: 'tsetskhli', category: 'nature', group: 'advanced' },
+  { id: 'w-stone', ka: 'ქვა', en: 'stone', translit: 'kva', category: 'nature', group: 'core' },
+  { id: 'w-flower', ka: 'ყვავილი', en: 'flower', translit: "q'vavili", category: 'nature', group: 'advanced' },
+  // --- food ---
+  { id: 'w-bread', ka: 'პური', en: 'bread', translit: "p'uri", category: 'food', group: 'core' },
+  { id: 'w-wine', ka: 'ღვინო', en: 'wine', translit: 'ghvino', category: 'food', group: 'core' },
+  { id: 'w-apple', ka: 'ვაშლი', en: 'apple', translit: 'vashli', category: 'food', group: 'core' },
+  { id: 'w-cheese', ka: 'ყველი', en: 'cheese', translit: "q'veli", category: 'food', group: 'advanced' },
+  { id: 'w-milk', ka: 'რძე', en: 'milk', translit: 'rdze', category: 'food', group: 'core' },
+  { id: 'w-coffee', ka: 'ყავა', en: 'coffee', translit: "q'ava", category: 'food', group: 'core' },
+  { id: 'w-tea', ka: 'ჩაი', en: 'tea', translit: 'chai', category: 'food', group: 'intro' },
+  { id: 'w-salt', ka: 'მარილი', en: 'salt', translit: 'marili', category: 'food', group: 'core' },
+  { id: 'w-egg', ka: 'კვერცხი', en: 'egg', translit: "k'vertskhi", category: 'food', group: 'advanced' },
+  { id: 'w-meat', ka: 'ხორცი', en: 'meat', translit: 'khortsi', category: 'food', group: 'core' },
+  // --- home & objects ---
+  { id: 'w-house', ka: 'სახლი', en: 'house', translit: 'sakhli', category: 'home', group: 'core' },
+  { id: 'w-room', ka: 'ოთახი', en: 'room', translit: 'otakhi', category: 'home', group: 'core' },
+  { id: 'w-door', ka: 'კარი', en: 'door', translit: "k'ari", category: 'home', group: 'intro' },
+  { id: 'w-window', ka: 'ფანჯარა', en: 'window', translit: 'panjara', category: 'home', group: 'advanced' },
+  { id: 'w-table', ka: 'მაგიდა', en: 'table', translit: 'magida', category: 'home', group: 'core' },
+  { id: 'w-book', ka: 'წიგნი', en: 'book', translit: "ts'igni", category: 'home', group: 'core' },
+  { id: 'w-money', ka: 'ფული', en: 'money', translit: 'puli', category: 'home', group: 'intro' },
+  { id: 'w-key', ka: 'გასაღები', en: 'key', translit: 'gasaghebi', category: 'home', group: 'advanced' },
+  // --- body ---
+  { id: 'w-eye', ka: 'თვალი', en: 'eye', translit: 'tvali', category: 'body', group: 'core' },
+  { id: 'w-hand', ka: 'ხელი', en: 'hand', translit: 'kheli', category: 'body', group: 'intro' },
+  { id: 'w-heart', ka: 'გული', en: 'heart', translit: 'guli', category: 'body', group: 'intro' },
+  { id: 'w-head', ka: 'თავი', en: 'head', translit: 'tavi', category: 'body', group: 'intro' },
+  { id: 'w-foot', ka: 'ფეხი', en: 'foot', translit: 'pekhi', category: 'body', group: 'core' },
+  // --- abstract / common ---
+  { id: 'w-love', ka: 'სიყვარული', en: 'love', translit: "siq'varuli", category: 'abstract', group: 'advanced' },
+  { id: 'w-word', ka: 'სიტყვა', en: 'word', translit: "sit'q'va", category: 'abstract', group: 'advanced' },
+  { id: 'w-name', ka: 'სახელი', en: 'name', translit: 'sakheli', category: 'abstract', group: 'core' },
+  { id: 'w-day', ka: 'დღე', en: 'day', translit: 'dghe', category: 'time', group: 'core' },
+  { id: 'w-night', ka: 'ღამე', en: 'night', translit: 'ghame', category: 'time', group: 'core' },
+  { id: 'w-year', ka: 'წელი', en: 'year', translit: "ts'eli", category: 'time', group: 'core' },
+  { id: 'w-time', ka: 'დრო', en: 'time', translit: 'dro', category: 'time', group: 'intro' },
+  { id: 'w-yes', ka: 'კი', en: 'yes', translit: "k'i", category: 'common', group: 'intro' },
+  { id: 'w-no', ka: 'არა', en: 'no', translit: 'ara', category: 'common', group: 'intro' },
+  { id: 'w-thanks', ka: 'მადლობა', en: 'thank you', translit: 'madloba', category: 'common', group: 'core' },
+  { id: 'w-hello', ka: 'გამარჯობა', en: 'hello', translit: 'gamarjoba', category: 'common', group: 'advanced' },
+  { id: 'w-good', ka: 'კარგი', en: 'good', translit: "k'argi", category: 'common', group: 'core' },
+  { id: 'w-big', ka: 'დიდი', en: 'big', translit: 'didi', category: 'common', group: 'intro' },
+  { id: 'w-small', ka: 'პატარა', en: 'small', translit: "p'at'ara", category: 'common', group: 'core' },
+  { id: 'w-new', ka: 'ახალი', en: 'new', translit: 'akhali', category: 'common', group: 'core' },
+  { id: 'w-road', ka: 'გზა', en: 'road', translit: 'gza', category: 'common', group: 'intro' },
+  { id: 'w-city', ka: 'ქალაქი', en: 'city', translit: 'kalaki', category: 'common', group: 'core' },
+];
+
+export const WORDS_BY_ID: Record<string, Word> = Object.fromEntries(
+  WORDS.map((w) => [w.id, w]),
+);
