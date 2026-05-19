@@ -2,6 +2,7 @@ import type { AlphabetLetter } from '@/types/models';
 
 /** Modern Mkhedruli — 33 letters, in traditional teaching order. */
 export const ALPHABET: AlphabetLetter[] = [
+  
   { id: 'an', glyph: 'ა', name: 'an', translit: 'a', ipa: '/ɑ/', order: 1, group: 'intro', confusableWith: ['ban'], exampleWord: { ka: 'არა', en: 'no' } },
   { id: 'ban', glyph: 'ბ', name: 'ban', translit: 'b', ipa: '/b/', order: 2, group: 'intro', confusableWith: ['an', 'don'], exampleWord: { ka: 'ბავშვი', en: 'child' } },
   { id: 'gan', glyph: 'გ', name: 'gan', translit: 'g', ipa: '/ɡ/', order: 3, group: 'intro', confusableWith: ['don'], exampleWord: { ka: 'გული', en: 'heart' } },
