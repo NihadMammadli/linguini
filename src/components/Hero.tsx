@@ -43,8 +43,20 @@ export function Hero() {
         </h1>
         <p className={`${styles.sub} ${styles.s2}`}>
           An immersive Georgian learning system focused on memory, recall, and
-          real language production.
+          real language production. From your first ა to your first sentence,
+          every keystroke trains your hand and your memory together.
         </p>
+        <ul className={`${styles.meta} ${styles.s2}`} aria-label="Highlights">
+          <li>
+            <strong>33</strong> letters, mastered by hand
+          </li>
+          <li>
+            <strong>0</strong> transliteration crutches
+          </li>
+          <li>
+            <strong>10 min</strong> daily practice loop
+          </li>
+        </ul>
         <div className={`${styles.actions} ${styles.s3}`}>
           <ButtonLink as="link" to="/dashboard" variant="gold" size="lg">
             Start Learning
