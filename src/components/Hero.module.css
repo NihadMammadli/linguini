@@ -131,7 +131,17 @@
 .s2,
 .s3 {
   opacity: 0;
-  animation: fadeInUp 0.9s var(--ease) forwards;
+  animation: heroFadeInUp 0.9s var(--ease) forwards;
+}
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .s0 {
   animation-delay: 0.1s;
@@ -164,7 +174,18 @@
   height: 8px;
   border-radius: 2px;
   background: var(--c-gold);
-  animation: scrollCue 1.6s var(--ease-soft) infinite;
+  animation: heroScrollCue 1.6s var(--ease-soft) infinite;
+}
+@keyframes heroScrollCue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
